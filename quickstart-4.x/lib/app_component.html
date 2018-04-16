@@ -1,0 +1,9 @@
+
+<label for="numberInput">number n: </label>
+<input type="number" id="numberInput"
+    #newNum
+    (keyup.enter)="calculate(newNum.value)"
+    (blur)="calculate(newNum.value); newNum.value='' ">
+<button (click)="calculate(newNum.value)">Calculate</button>
+    {{valueFib}}
+
